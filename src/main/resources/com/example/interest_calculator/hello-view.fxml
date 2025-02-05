@@ -3,6 +3,7 @@
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
 <VBox alignment="CENTER" prefHeight="400.0" prefWidth="700.0" spacing="20.0" style="-fx-background-color: linear-gradient(#2B2B2B, #999999);" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.interest_calculator.InterestCalculator">
   <padding>
@@ -14,9 +15,13 @@
             <TextField fx:id="principle" layoutX="167.0" layoutY="85.0" prefHeight="45.0" prefWidth="150.0" style="-fx-background-radius: 10;" />
             <TextField fx:id="time" layoutX="132.0" layoutY="146.0" prefHeight="45.0" prefWidth="150.0" style="-fx-background-radius: 10;" />
             <TextField fx:id="rate" layoutX="130.0" layoutY="207.0" prefHeight="45.0" prefWidth="150.0" style="-fx-background-radius: 10;" />
-            <TextField fx:id="interest" layoutX="159.0" layoutY="268.0" prefHeight="45.0" prefWidth="150.0" style="-fx-background-radius: 10;" editable="false"/>
+            <TextField fx:id="interest" editable="false" layoutX="159.0" layoutY="268.0" prefHeight="45.0" prefWidth="150.0" style="-fx-background-radius: 10;" />
             <Button fx:id="calculate" layoutX="317.0" layoutY="177.0" mnemonicParsing="false" onAction="#onCalculateButtonClick" prefHeight="45.0" prefWidth="100.0" style="-fx-background-radius: 10;" text="Calculate" />
-            <Label fx:id="result" layoutX="368.0" layoutY="105.0" />
+            <Label fx:id="result" layoutX="368.0" layoutY="105.0" prefHeight="17.0" prefWidth="0.0" />
+            <Label layoutX="250.0" layoutY="20.0" text="Interest Calculator">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font></Label>
          </children></Pane>
    </children>
 </VBox>
